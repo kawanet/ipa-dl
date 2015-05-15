@@ -1,7 +1,7 @@
 旧 TestFlight が終了したので、代わりにお手軽な .ipa のダウンロード画面を作成した。
 
-https://raw.githubusercontent.com/kawanet/ipa-dl/master/dl.html
-https://raw.githubusercontent.com/kawanet/ipa-dl/master/dl.plist
+https://raw.githubusercontent.com/kawanet/ipa-dl/gh-pages/dl.html
+https://raw.githubusercontent.com/kawanet/ipa-dl/gh-pages/dl.plist
 
 １）上記から dl.html と dl.plist をダウンロードする  
 ２）dl.plist の XXXXXX の部分を書き換える  
