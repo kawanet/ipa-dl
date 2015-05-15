@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=320, initial-scale=1">
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+$(function(){return $(".btn").on("click",function(){var n=$(this).data("url");n=location.href.replace(/[^\/]*$/,"")+n;var t=n+"?_="+(new Date-0);n="itms-services://?action=download-manifest&url="+n,$.ajax(t).done(function(t){var e={};$(t).find("key").each(function(n,t){var a=$(t),r=a.next();r.children().length||(e[a.text()]=r.text())});var a=e.url;a=a&&a.replace(/^.*\//,""),confirm(e.title+"\n"+a+"\nをインストールしますか")&&(location.href=n)})}),!1});
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<title>ダウンロード</title>
+</head>
+<body>
+<div class="container">
+
+<p>&nbsp;</p>
+
+<p>
+<a class="btn btn-success btn-large btn-block" href="#" data-url="dl.plist">ダウンロード</a>
+</p>
+
+</div>
+</body>
+</html>
